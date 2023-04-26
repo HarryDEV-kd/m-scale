@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+        }
+        .con-fluid{
+            width: 100%;
+            height: auto;
+            background: #000;
+        }
+        .con{
+            width: 1024px;
+            height: auto;
+            margin: 0 auto;
+            background-color: rgb(253, 253, 253);
+        }
+        .cards{
+            width: 500px;
+            margin: 100px auto;
+        }
+        .card{
+            height: 400px;
+            background-color: rgb(204, 152, 21);
+            border-radius: 20px;
+        }
+        .card h5{
+            color: black;
+            font-size: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .btn{
+            border: none;
+            font-size: 20px;
+            border-radius: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+            color: rgb(204, 152, 21);
+             background-color: rgb(0, 0, 0);
+             width: 85%;
+             margin:2rem 0 0 1.6rem;
+             padding: 1rem 0.8rem 1rem 0.8rem;
+        }
+        .add input{
+            width: 95%;
+            font-size: 1em;
+              border: none;
+             border-radius: 5px;
+              margin-left: 15px;
+               box-sizing: border-box;
+             padding: 10px;
+             outline: none;
+        }
+        #demo{
+            color:blanchedalmond;
+            padding: 1rem;
+            font-size: 30px;
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+            margin-top: 1rem;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <section class="con-fluid">
+        <div class="con">
+            <div class="cards">
+                <div class="card">
+                    <h5>METER - FEET</h5>
+                    <div class="add">
+                      <input type="text" id="input" placeholder="Centimeter">
+                    </div>
+                    <div class="button">
+                        <button class="btn" type="submit" onclick="calc()">CLICK</button>
+                    </div>
+                    <div id="demo">
+
+
+                    </div>
+                </div>
+            </div>
+       </div>
+    </section>
+    <script>
+        function calc(){
+        const meter = Number(document.getElementById("input").value);
+        const feet = meter*3.281;
+        const demo = document.getElementById("demo");
+        demo.innerHTML= feet.toFixed(3) + " "+"FEETS";
+        }
+    </script>
+</body>
+</html>

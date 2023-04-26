@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.con-fluid{
+    width: 100%;
+    height: auto;
+
+}
+.con{
+    width: 1024px;
+    height: auto;
+    margin: 0 auto;
+}
+.tit-tag{
+    background-color:rgb(5, 8, 56);
+    padding: 1rem 0 1rem 0.5rem;
+    font-weight: bolder;
+}
+.title{
+font-size: 25px;
+color: azure;
+font-family: Arial, Helvetica, sans-serif;
+text-shadow: 2px 0 0 rgb(12, 12, 12);
+padding: 1rem 0 1rem o.5rem;
+}
+.img{
+    background-image: url("images/1836325.jpg");
+    background-position:center;
+}
+.title1{
+font-size: 45px;
+font-weight: bolder;
+color: azure;
+font-family: Arial, Helvetica, sans-serif;
+text-shadow: 2px 0 0 rgb(10, 10, 10);
+padding: 20rem 0 1.5rem 2rem;
+}
+#t2{
+ font-size: 18px;
+color: azure;
+font-family: Arial, Helvetica, sans-serif;
+text-shadow: 2px 0 0 rgb(12, 12, 12);
+padding: 0 0 2rem 2rem;
+}
+#t2 li{
+    display: inline-block;
+    padding-inline-start: 25px;
+    margin-bottom: 3rem;
+}
+.cards{
+display: flex;
+justify-content: space-between;
+padding: 5rem 0 ;
+}
+.card{
+    width: 20%;
+    height:200px;
+    background-color: rgba(0, 0, 0);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.card p{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    padding: 3rem 0;
+    color:whitesmoke;
+    text-align: center;
+}
+.card button{
+    width: 50%;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    color: rgb(12, 12, 12);
+    background-color: #ffffff;
+    margin: 1.5rem 0 0 2rem;
+    padding: 15px;
+
+}
